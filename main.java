@@ -1,4 +1,5 @@
-
+//Gerardo Molina 14492
+//Erick Bautista 15192
 import java.util.Scanner;
 
 public class main 
@@ -14,6 +15,11 @@ public class main
 	scan = new Scanner( System.in );
 	String seleccion="";
 	int llave=0;
+	String seleccion2="";
+	String seleccion3="";
+	int sint1=0;
+	int sint2=0;
+	
 	while(llave==0)
 	{
 		
@@ -42,7 +48,8 @@ public class main
 	}
 	if(seleccion.equals("2"))
 	{
-		
+		baseDeDatos Base=new baseDeDatos();
+		Base.funcion2();
 	}
 	if(seleccion.equals("3"))
 	{
@@ -54,20 +61,27 @@ public class main
 	}
 	if(seleccion.equals("5"))
 	{
-		
+		baseDeDatos Base=new baseDeDatos();
+		Base.funcion5();
 	}
 	if(seleccion.equals("6"))
 	{	
-		
-		
-	}
+	System.out.println("Seleccione la persona que desea analzar como emisor");
+	seleccion2=scan.nextLine();
+	sint1=Integer.parseInt(seleccion2);
 	
+	System.out.println("Seleccione la persona que desea analzar como reseptor");
+	seleccion3=scan.nextLine();
+	sint2=Integer.parseInt(seleccion3);
+	
+	baseDeDatos Base=new baseDeDatos();
+	Base.funcion6(seleccion2,seleccion3);
+	
+	}
 	if(seleccion.equals("7"))
 	{	
-		llave=1;	
+		System.exit(0);	
 	}
-	
-		
 	}catch(Exception e)
 		{
 			System.err.println("No seleccionaste una opcion valida" + e.getMessage());

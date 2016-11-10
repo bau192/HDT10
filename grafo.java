@@ -1,3 +1,7 @@
+
+//Gerardo Molina 14492
+//Erick Bautista 15192
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -32,7 +36,7 @@ public class grafo extends JFrame {
 	 */
 	public grafo() {
 		setTitle("Grafo");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 628, 436);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
